@@ -1,0 +1,57 @@
+/*===========================================
+ISHAT NOOR MAHI | PORTFOLIO 2.0 | 2022 
+        main css file 
+        Custom Css here 
+=============================================*/
+
+
+
+:root {
+    --inm-main-bg: #181818;
+
+    --inm-light-txt: #fff;
+    --inm-dark-txt: #2a2a2a;
+    --inm-link: #0d436c;
+
+
+}
+
+/*========/ INITIAL SETUP /=========*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--inm-main-bg);
+    color: var(--inm-light-txt);
+    font-family: 'Raleway', 'sans serif';
+    /*Default family: Raleway*/
+}
+
+/* link colors */
+a {
+    text-decoration: none;
+    color: var(--inm-link);
+}
+
+/* list styles */
+ul {
+    list-style-type: none;
+}
+
+/* Clear fix */
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+/*========/ INITIAL SETUP END /=========*/

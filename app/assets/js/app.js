@@ -1,22 +1,15 @@
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
+/*===========================================
+ISHAT NOOR MAHI | PORTFOLIO 2.0 | 2022 
 
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-
-// particlesJS.load('particles-js', 'particlesjs.json', function() {
-//   console.log('particles.js loaded - callback');
-// });
-
-
-/* Otherwise just put the config content (json): */
+PARTICLES.JS CONFIGURATIONS
+=============================================*/
 
 particlesJS('particles-js',
   
   {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 55,
         "density": {
           "enable": true,
           "value_area": 1000
@@ -41,7 +34,7 @@ particlesJS('particles-js',
         }
       },
       "opacity": {
-        "value": 0.8,
+        "value": 0.5,
         "random": false,
         "anim": {
           "enable": false,
@@ -69,7 +62,7 @@ particlesJS('particles-js',
       },
       "move": {
         "enable": true,
-        "speed": 2,
+        "speed": 1,
         "direction": "bottom-right",
         "random": false,
         "straight": false,
