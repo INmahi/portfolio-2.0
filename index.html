@@ -9,19 +9,148 @@
     <link rel="shortcut icon" href="/app/assets/img/favicon.png" type="image/x-icon">
     <!--FONT AWESOME-->
     <script src="https://kit.fontawesome.com/4e7b3c1017.js"></script>
-    <!--GOOGLE FONTS: Open Sans, raleway-->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+    <!--GOOGLE FONTS: Titillium Web, raleway-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
+    rel="stylesheet">    
     <!--CSS FILE-->
     <link rel="stylesheet" href="app/assets/css/style.css">
     <link rel="stylesheet" href="app/assets/css/main.css">
+    <style>
+
+        .bull {
+            position: relative;
+            font-weight: 700;
+            transition: .25s ease-in-out;
+        }
+        .bull::before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            left: -0.75em;
+            top: 46%;
+            width: 23px;
+            height: 23px;
+            box-sizing: border-box;
+            border-radius: 100%;
+            border: 7.5px solid #333333;
+            background-color: hsl(200, 100%, 50%);
+            transition: .125s ease-in-out;
+            /* box-shadow: 0 0 0.1rem 0.1rem hsl(0deg 0% 50% / 25%); */
+            animation: pulse 1s 1s infinite linear alternate;
+        }
+
+        @keyframes pulse {
+            from {
+                background-color: #00aaff;
+            }
+            to {
+                background-color: #2f2f2fe4;
+            }
+        }
+
+    </style>
 </head>
 <body>
-    <div class="inm-container" id="particles-js">
-        <header>
-            <div class="p-5 bg-primary">
-                hello primary
+    <div class="inm-main inm-particles" id="particles-js">
+        <header class="inm-header">
+            <div class="header-contain row inm-container">
+                <div class="inm-header-col col col-3 text-center overflow-hidden">
+                    <img src="app/assets/img/logo1.png" alt="Mahi" class="inm-logo">
+                </div>
+                <div class="inm-header-col col col-6 text-center overflow-hidden inm-navbar">
+                    <nav class="navbar navbar-expand-lg navbar-light justify-content-center p-0">
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-capitalize inm-active-menu">
+                                    home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-capitalize">
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-capitalize">
+                                    Portfolio
+                                    <span>+</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-capitalize">
+                                    Contact
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+                <div class="inm-header-col col col-3 text-center overflow-hidden inm-moreBtn">
+                    <div class="moreBtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
             </div>
         </header>
+        <section class="hero">
+            <div class="inm-container">
+                <div class="inm-title inm-hero-left" style="position:absolute; top:150px; left:35px;">
+                    <ul class="welcome-txt hero-welcome-txt">
+                        <li class="bull">Welcome</li>
+                    </ul>
+                    <h1>
+                        Hi! I'm Mahi
+                    </h1>
+                    <p class="inm-title-desc w-50">Welcome folks! I am Ishat Noor (Mahi), a student, web developer and a graphics designer. Working on several freelance marketplaces & enjoy learning more skills everyday & use them to help others. </p>
+                    <div class="hero-btn">
+                        <button class="inm-btn inm-main-btn inm-light-btn">Get Started</button>
+                        <button class="inm-btn inm-main-btn inm-light-btn">Take a tour</button>
+                    </div>
+                </div>
+                <div class="right-lebel" style="position:absolute;top: 50px; right: 15px;">
+
+                    <div class="inm-hero-right" style=" display: inline-block;
+        height: 400px;
+        width: 30px;
+        overflow: visible;
+        position: relative;">
+                        <div class="hero-lebel-txt" style="transform: rotate(90deg);position: absolute;top: 130px;height: 0px;width: 174px;/* right: 0; */left: -67px;">
+                            <span class ="mono"style="font-size: 14px;
+    font-weight: 600;
+    opacity: .7;">designer / developer </span>
+                        </div>
+                        <div style="
+        
+        background: #fff;
+        display: inline-block;
+        position: absolute;
+        top: 210px;
+        left: 3px;
+        height: 78px;
+        /* border-radius: 5px; */
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 7px;
+    "></div>
+                        <div class="hero-social-icons" style="
+        position: absolute;
+        bottom: 0;
+        left: -3px;
+    ">
+                            <ul class="list-unstyled">
+                                <li><a href="#" style="color:#ddd;"><i class="fa-solid fa-envelope"></i></a></li>
+                                <li><a href="#" style="color:#ddd; font-size:18px;"><i class="fa-brands fa-github"></i></a></li>
+                                <li><a href="#" style="color:#ddd;"><i class="fa-brands fa-discord"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
     </div>
     <script src="app/assets/js/script.js"></script>
     <script src="app/assets/js/particles.js"></script>

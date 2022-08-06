@@ -31,8 +31,7 @@ html {
 body {
     background-color: var(--inm-main-bg);
     color: var(--inm-light-txt);
-    font-family: 'Raleway', 'sans serif';
-    /*Default family: Raleway*/
+    font-family: 'Raleway', sans-serif;
 }
 
 /* link colors */
@@ -45,7 +44,15 @@ a {
 ul {
     list-style-type: none;
 }
-
+h1,h2,h3,h4,h5,h6,.inm-title{
+    font-family: 'Titillium Web', sans-serif;
+}
+p,span,a,.lead,.inm-desc{
+    font-family:'Raleway', sans-serif ;
+}
+.mono{
+    font-family: monospace;
+}
 /* Clear fix */
 .clear::after {
     content: "";
@@ -55,3 +62,76 @@ ul {
 }
 
 /*========/ INITIAL SETUP END /=========*/
+
+/*========/ Particles js /=========*/
+#particles-js{
+    background-image: linear-gradient(to right,#10151bf9 38%,#212932);
+}
+
+/*========/ LOGO /=========*/
+.inm-logo{
+    width: 100px;
+}
+
+/*========/ HEADER, NAVBAR /=========*/
+.inm-header{
+    padding: 10px 0 10px 0;
+}
+
+.inm-header .inm-navbar .navbar-nav .nav-item{
+    margin: 0 10px 0 10px;
+
+}
+.inm-header .inm-navbar .navbar-nav .nav-item {
+    /* width: 100px; */
+}
+.inm-header .inm-navbar .navbar-nav .nav-item .nav-link{
+    color: #ffffffad;
+    font-size: 15px;
+    font-weight: 600;
+    /* font-family: monospace; */
+    letter-spacing: .5px;
+    position: relative;
+}
+.inm-header .inm-navbar .navbar-nav .nav-item:first-child{
+    margin-left: 0;
+}
+.inm-header .inm-navbar .navbar-nav .nav-item:hover .nav-link{
+    color: #fff;
+    transition: .2s ease-in all;
+    -webkit-transition: .2s ease-in all;
+    -moz-transition: .2s ease-in all;
+    -ms-transition: .2s ease-in all;
+    -o-transition: .2s ease-in all;
+}
+.inm-header .inm-navbar .navbar-nav .nav-item .nav-link::after,.inm-active-menu::after {
+    content: "";
+    background-color: var(--inm-link);
+    width: 0;
+    display: inline-block;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: .2s ease-in all;
+    -webkit-transition: .2s ease-in all;
+    -moz-transition: .2s ease-in all;
+    -ms-transition: .2s ease-in all;
+    -o-transition: .2s ease-in all;
+}
+.inm-header .inm-navbar .navbar-nav .nav-item:hover .nav-link::after{
+    width: 100%;
+}
+.inm-active-menu {
+    color: #fff!important;
+}
+.inm-active-menu::after{
+    width: 100%!important;
+}
+
+.inm-moreBtn{
+    align-self: center;
+}
+/*========/ HEADER, NAVBAR END /=========*/
