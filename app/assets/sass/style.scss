@@ -1,4 +1,8 @@
 
-
+.dropdown-item:hover{
+    background-color: #ffffffad;
+    color: #000;
+}
+$light: #a9a9ae;
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
